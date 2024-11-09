@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9cb298;
+}
+
+.resume-containe {
+    width: 90%;
+    max-width: 600px;
+    background: #cad0c2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Devices (Portrait and Landscape) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Making sure the content doesn't overflow */
+    section {
+        margin-bottom: 15px;
+    }
+}
+
+/* Desktop Devices */
+@media (min-width: 769px) {
+    .resume-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    button {
+        padding: 12px 18px;
+        font-size: 1.1rem;
+    }
+}
